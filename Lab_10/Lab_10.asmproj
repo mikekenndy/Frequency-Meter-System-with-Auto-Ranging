@@ -15,7 +15,7 @@
     <Name>Lab_10</Name>
     <RootNamespace>Lab_10</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
-    <EntryFile>$(MSBuildProjectDirectory)\direct_period_meas.asm</EntryFile>
+    <EntryFile>$(MSBuildProjectDirectory)\sample_interval.asm</EntryFile>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
     <CacheFlash>true</CacheFlash>
@@ -81,6 +81,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="direct_period_meas.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample_interval.asm">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

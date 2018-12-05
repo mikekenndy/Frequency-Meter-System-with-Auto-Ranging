@@ -722,9 +722,7 @@ RESET:
 	sts TCCR1A, r16		;sets the timer with clock off,
 	sts TCCR1B, r16		;and in normal mode with a prescalar of 1.
 
-	;configure interrupts
-		
-	
+	;configure interrupts	
 	ldi r16, (1<<ISC11) | (1<<ISC10)	;configure for positive edge detection
 	sts EICRA, r16
 	bset 7		;global enable for interrupts
@@ -733,7 +731,7 @@ RESET:
 
 
 start:
-	ldi r16, 1<<INT1		;enable interrupt 1 request
+	ldi r16, 1 << INT1		;enable interrupt 1 request
 	out EIMSK, r16
 							;check if a valid count has been found
 
