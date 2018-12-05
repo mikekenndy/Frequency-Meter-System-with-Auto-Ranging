@@ -50,6 +50,8 @@ PORTS USED:
 ;====================================
 .include "lcd_dog_asm_driver_m324a.inc"  ; LCD DOG init/update procedures.
 ;====================================
+
+
 ;***************************************************************************
 ;*
 ;* "bin2BCD16" - 16-bit Binary to BCD conversion
@@ -58,11 +60,11 @@ PORTS USED:
 ;* packed BCD number represented by 3 bytes (tBCD2:tBCD1:tBCD0).
 ;* MSD of the 5-digit number is placed in the lowermost nibble of tBCD2.
 ;*  
-;* Number of words	:25
-;* Number of cycles	:751/768 (Min/Max)
-;* Low registers used	:3 (tBCD0,tBCD1,tBCD2) 
-;* High registers used  :4(fbinL,fbinH,cnt16a,tmp16a)	
-;* Pointers used	:Z
+;* Number of words:	25
+;* Number of cycles: 751/768 (Min/Max)
+;* Low registers used: 3 (tBCD0,tBCD1,tBCD2) 
+;* High registers used: 4 (fbinL,fbinH,cnt16a,tmp16a)	
+;* Pointers used: Z
 ;*
 ;***************************************************************************
 
@@ -106,14 +108,14 @@ bBCDx_3:
 ;	ld	tmp16a,Z
 ;
 ;----------------------------------------------------------------
-	subi	tmp16a,-$03	;add 0x03
-	sbrc	tmp16a,3	;if bit 3 not clear
-	st	Z,tmp16a	;	store back
-	ld	tmp16a,Z	;get (Z)
-	subi	tmp16a,-$30	;add 0x30
-	sbrc	tmp16a,7	;if bit 7 not clear
-	st	Z,tmp16a	;	store back
-	cpi	ZL,AtBCD0	;done all three?
+	subi	tmp16a, -$03	;add 0x03
+	sbrc	tmp16a, 3	;if bit 3 not clear
+	st		Z, tmp16a	;	store back
+	ld		tmp16a, Z	;get (Z)
+	subi	tmp16a, -$30	;add 0x30
+	sbrc	tmp16a, 7	;if bit 7 not clear
+	st		Z, tmp16a	;	store back
+	cpi		ZL, AtBCD0	;done all three?
 	brne	bBCDx_3		;loop again if not
 	rjmp	bBCDx_1		
 

@@ -1,22 +1,22 @@
 
-AVRASM ver. 2.2.7  D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm Tue Dec 04 13:48:36 2018
+AVRASM ver. 2.2.7  D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm Tue Dec 04 18:41:55 2018
 
 D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(39): Including file 'D:/Program Files\Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\m324adef.inc'
 D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(51): Including file 'D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\lcd_dog_asm_driver_m324a.inc'
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(144): warning: Register r13 already defined by the .DEF directive
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(145): warning: Register r14 already defined by the .DEF directive
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(146): warning: Register r15 already defined by the .DEF directive
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(148): warning: Register r18 already defined by the .DEF directive
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(149): warning: Register r19 already defined by the .DEF directive
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(153): warning: Register r18 already defined by the .DEF directive
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(154): warning: Register r19 already defined by the .DEF directive
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(155): warning: Register r20 already defined by the .DEF directive
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(156): warning: Register r21 already defined by the .DEF directive
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(163): warning: Register r17 already defined by the .DEF directive
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(688): warning: Register r20 already defined by the .DEF directive
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(689): warning: Register r21 already defined by the .DEF directive
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(690): warning: Register r22 already defined by the .DEF directive
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(691): warning: Register r23 already defined by the .DEF directive
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(146): warning: Register r13 already defined by the .DEF directive
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(147): warning: Register r14 already defined by the .DEF directive
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(148): warning: Register r15 already defined by the .DEF directive
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(150): warning: Register r18 already defined by the .DEF directive
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(151): warning: Register r19 already defined by the .DEF directive
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(155): warning: Register r18 already defined by the .DEF directive
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(156): warning: Register r19 already defined by the .DEF directive
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(157): warning: Register r20 already defined by the .DEF directive
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(158): warning: Register r21 already defined by the .DEF directive
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(165): warning: Register r17 already defined by the .DEF directive
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(690): warning: Register r20 already defined by the .DEF directive
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(691): warning: Register r21 already defined by the .DEF directive
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(692): warning: Register r22 already defined by the .DEF directive
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(693): warning: Register r23 already defined by the .DEF directive
 D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(39): Including file 'D:/Program Files\Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\m324adef.inc'
 D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(51): Including file 'D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\lcd_dog_asm_driver_m324a.inc'
                                  
@@ -439,6 +439,8 @@ D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10
                                  
                                  ;******* End Of Include Module *********************************
                                  ;====================================
+                                 
+                                 
                                  ;***************************************************************************
                                  ;*
                                  ;* "bin2BCD16" - 16-bit Binary to BCD conversion
@@ -447,11 +449,11 @@ D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10
                                  ;* packed BCD number represented by 3 bytes (tBCD2:tBCD1:tBCD0).
                                  ;* MSD of the 5-digit number is placed in the lowermost nibble of tBCD2.
                                  ;*  
-                                 ;* Number of words	:25
-                                 ;* Number of cycles	:751/768 (Min/Max)
-                                 ;* Low registers used	:3 (tBCD0,tBCD1,tBCD2) 
-                                 ;* High registers used  :4(fbinL,fbinH,cnt16a,tmp16a)	
-                                 ;* Pointers used	:Z
+                                 ;* Number of words:	25
+                                 ;* Number of cycles: 751/768 (Min/Max)
+                                 ;* Low registers used: 3 (tBCD0,tBCD1,tBCD2) 
+                                 ;* High registers used: 4 (fbinL,fbinH,cnt16a,tmp16a)	
+                                 ;* Pointers used: Z
                                  ;*
                                  ;***************************************************************************
                                  
@@ -495,14 +497,14 @@ D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10
                                  ;	ld	tmp16a,Z
                                  ;
                                  ;----------------------------------------------------------------
-00008c 5f3d                      	subi	tmp16a,-$03	;add 0x03
-00008d fd33                      	sbrc	tmp16a,3	;if bit 3 not clear
-00008e 8330                      	st	Z,tmp16a	;	store back
-00008f 8130                      	ld	tmp16a,Z	;get (Z)
-000090 5d30                      	subi	tmp16a,-$30	;add 0x30
-000091 fd37                      	sbrc	tmp16a,7	;if bit 7 not clear
-000092 8330                      	st	Z,tmp16a	;	store back
-000093 30ed                      	cpi	ZL,AtBCD0	;done all three?
+00008c 5f3d                      	subi	tmp16a, -$03	;add 0x03
+00008d fd33                      	sbrc	tmp16a, 3	;if bit 3 not clear
+00008e 8330                      	st		Z, tmp16a	;	store back
+00008f 8130                      	ld		tmp16a, Z	;get (Z)
+000090 5d30                      	subi	tmp16a, -$30	;add 0x30
+000091 fd37                      	sbrc	tmp16a, 7	;if bit 7 not clear
+000092 8330                      	st		Z, tmp16a	;	store back
+000093 30ed                      	cpi		ZL, AtBCD0	;done all three?
 000094 f7b1                      	brne	bBCDx_3		;loop again if not
 000095 cfec                      	rjmp	bBCDx_1		
                                  
@@ -1218,14 +1220,14 @@ D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10
 0001d0 3d20
 0001d1 2020
 0001d2 2020
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(827): warning: .cseg .db misalignment - padding zero byte
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(829): warning: .cseg .db misalignment - padding zero byte
 0001d3 0000                      line1_testmessage: .db 1, "Frq =    ", 0  ; message for line #1.
 0001d4 5002
 0001d5 6472
 0001d6 3d20
 0001d7 2020
 0001d8 2020
-D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(828): warning: .cseg .db misalignment - padding zero byte
+D:\Desktop\School\ESE 380\Lab 10\Frequency-Meter-System-with-Auto-Ranging\Lab_10\direct_period_meas.asm(830): warning: .cseg .db misalignment - padding zero byte
 0001d9 0000                      line2_testmessage: .db 2, "Prd =    ", 0  ; message for line #2.
 
 
