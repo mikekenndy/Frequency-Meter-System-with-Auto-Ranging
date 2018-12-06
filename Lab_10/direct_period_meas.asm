@@ -40,7 +40,6 @@ PORTS USED:
 .list
 
 	rjmp RESET      ;Reset/Cold start vector
-	reti
 	.org INT1addr
 		rjmp period_calc
 
@@ -50,8 +49,6 @@ PORTS USED:
 ;====================================
 .include "lcd_dog_asm_driver_m324a.inc"  ; LCD DOG init/update procedures.
 ;====================================
-
-
 ;***************************************************************************
 ;*
 ;* "bin2BCD16" - 16-bit Binary to BCD conversion
@@ -60,11 +57,11 @@ PORTS USED:
 ;* packed BCD number represented by 3 bytes (tBCD2:tBCD1:tBCD0).
 ;* MSD of the 5-digit number is placed in the lowermost nibble of tBCD2.
 ;*  
-;* Number of words:	25
-;* Number of cycles: 751/768 (Min/Max)
-;* Low registers used: 3 (tBCD0,tBCD1,tBCD2) 
-;* High registers used: 4 (fbinL,fbinH,cnt16a,tmp16a)	
-;* Pointers used: Z
+;* Number of words	:25
+;* Number of cycles	:751/768 (Min/Max)
+;* Low registers used	:3 (tBCD0,tBCD1,tBCD2) 
+;* High registers used  :4(fbinL,fbinH,cnt16a,tmp16a)	
+;* Pointers used	:Z
 ;*
 ;***************************************************************************
 
@@ -108,14 +105,14 @@ bBCDx_3:
 ;	ld	tmp16a,Z
 ;
 ;----------------------------------------------------------------
-	subi	tmp16a, -$03	;add 0x03
-	sbrc	tmp16a, 3	;if bit 3 not clear
-	st		Z, tmp16a	;	store back
-	ld		tmp16a, Z	;get (Z)
-	subi	tmp16a, -$30	;add 0x30
-	sbrc	tmp16a, 7	;if bit 7 not clear
-	st		Z, tmp16a	;	store back
-	cpi		ZL, AtBCD0	;done all three?
+	subi	tmp16a,-$03	;add 0x03
+	sbrc	tmp16a,3	;if bit 3 not clear
+	st	Z,tmp16a	;	store back
+	ld	tmp16a,Z	;get (Z)
+	subi	tmp16a,-$30	;add 0x30
+	sbrc	tmp16a,7	;if bit 7 not clear
+	st	Z,tmp16a	;	store back
+	cpi	ZL,AtBCD0	;done all three?
 	brne	bBCDx_3		;loop again if not
 	rjmp	bBCDx_1		
 
@@ -722,22 +719,26 @@ RESET:
 	sts TCCR1A, r16		;sets the timer with clock off,
 	sts TCCR1B, r16		;and in normal mode with a prescalar of 1.
 
-	;configure interrupts	
+	;configure interrupts
+		
+	
 	ldi r16, (1<<ISC11) | (1<<ISC10)	;configure for positive edge detection
 	sts EICRA, r16
-	bset 7		;global enable for interrupts
+	sei
+	;bset 7		;global enable for interrupts
 
 
 
 
 start:
+	
 	ldi r16, 1 << INT1		;enable interrupt 1 request
 	out EIMSK, r16
 							;check if a valid count has been found
 
 	brhc start				;if not, do nothing
 							;if yes, update
-	bclr 5					;clear the half carry flag
+	clh						;clear the half carry flag
 	ldi r16, 0<<INT1		;clear interrupt 1 request
 	out EIMSK, r16
 
@@ -790,6 +791,8 @@ display:
    rcall load_decimal_period		    ; load message into buffer(s).
 
 	rcall update_lcd_dog
+	LDI R16, 1 << INT1
+	out EIFR, r16
 	rjmp start
 
 period_calc:
